@@ -1,1 +1,1 @@
-# SpaceX-React-App
+# SpaceX Rocket Encyclopedia - React App
