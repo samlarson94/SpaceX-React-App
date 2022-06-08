@@ -55,7 +55,7 @@ export const Modal = (prop) => (
         </a>
     </div>
     {/* List of Rocket Stats */}
-    <div className="row rocket-info">
+    <div className="row rocket-stats">
       
     <div className="col-sm-4">
         <h4>Active</h4>
@@ -108,7 +108,7 @@ export const Modal = (prop) => (
       </div>
     </div>
     <p>{prop.rocket.description}</p>
-    <a href={prop.rocket.wikipedia} type="button" className="btn btn-primary">Read More about {prop.rocket.name}</a>
+    <a href={prop.rocket.wikipedia} type="button" className="btn btn-secondary read-more-btn">Read More about {prop.rocket.name}</a>
   </div>
   <div className="modal-footer">
   {/* Link to Wikipedia to learn more about the rocket */}

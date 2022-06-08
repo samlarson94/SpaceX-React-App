@@ -10,6 +10,35 @@
   margin-bottom: 30px;
 }
 
+.rocket-stats {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.rocket-stats h4 {
+  font-weight: bold;
+}
+
+.read-more-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.read-more-btn:hover {
+  color:greenyellow;
+}
+
+.main-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  margin: 30px;
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

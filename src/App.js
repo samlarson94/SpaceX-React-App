@@ -25,6 +25,7 @@ class App extends Component {
   render () {
   return (
     <div className="container">
+      <h1 className="main-title">SpaceX Rocket Explorer 🚀</h1>
       <div className="row">
       {/* Create map function to loop over rockets array */}
         {this.state.rockets.map((rocket) => (
