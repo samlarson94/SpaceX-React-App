@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SpaceX-React-App/static/css/main.4600db4e.css",
+    "main.js": "/SpaceX-React-App/static/js/main.15d6fc19.js",
+    "static/js/787.960af14f.chunk.js": "/SpaceX-React-App/static/js/787.960af14f.chunk.js",
+    "index.html": "/SpaceX-React-App/index.html",
+    "main.4600db4e.css.map": "/SpaceX-React-App/static/css/main.4600db4e.css.map",
+    "main.15d6fc19.js.map": "/SpaceX-React-App/static/js/main.15d6fc19.js.map",
+    "787.960af14f.chunk.js.map": "/SpaceX-React-App/static/js/787.960af14f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4600db4e.css",
+    "static/js/main.15d6fc19.js"
+  ]
+}
