@@ -3,7 +3,7 @@
 ## Description
 This app was built to practice React skills while working with different space-related API's. With a simple UI, it allows the user to browse facts about the top commercial spacecraft on earth.
 
-A deployed version of this app can be found at 
+A deployed version of this app can be found at https://samlarson94.github.io/SpaceX-React-App/.
 
 # Instructions
 To run locally, be sure to fork before you clone the repository's code if you want to make any changes.  Then, run an "npm i" terminal command in the root folder to install all dependencies.  Double check your package.json files to make sure the necessary dependencies have been added.
