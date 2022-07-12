@@ -11,7 +11,7 @@ To run locally, be sure to fork before you clone the repository's code if you wa
 Once complete, run an "npm run develop" command to build and launch the app in your localhost.
 
 ## Usage
-The use of this application is simple and straight-forward.  Once the arrice on the homepage, you will be able to click on different rocket cards.  Once selected, a module will pop up with stats and a description of the rocket.  A link to Wikipedia has been included for further reading.
+The use of this application is simple and straight-forward.  Once you arrive on the homepage, you will be able to click on different rocket cards.  Once selected, a module will pop up with stats and a description of the rocket.  A link to Wikipedia has been included for further reading.
 
 ## Future Development 
 This application is nowhere near completed. Anyone is welcome to view and build additional features that can be added under the "issues" tab.  Some of the upcoming features are as follows: 
