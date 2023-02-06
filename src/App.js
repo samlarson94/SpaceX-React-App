@@ -8,6 +8,9 @@ import SpaceNews from './components/SpaceNews';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 //Changing to class-based component so we can utilize State.
 class App extends Component {
   constructor () {
@@ -60,10 +63,13 @@ class App extends Component {
           <h1>Space News</h1>
           <div class="article-list-container">
           {this.state.articles.map((article) => (
-            <section key={article.id}>
-              <h1>{article.title}</h1>
-              <p>{article.url}</p>
-            </section>
+            <div key={article.id}>
+            <h3>{article.title}</h3>
+            <img src={article.imageUrl} />
+            <p>{article.url}</p>
+            <a href={article.url} class="btn btn-primary">Go to Article</a>
+            </div>
+          
           ))}
 
           </div>
