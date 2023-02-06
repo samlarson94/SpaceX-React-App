@@ -29,6 +29,7 @@ class App extends Component {
         //Pull rockets data and assign to empty array 'rockets' state
       .then(rockets => this.setState({rockets: rockets}))
 
+  // Currently only pulling articles that pertain to SpaceX for News Section
     fetch('https://api.spaceflightnewsapi.net/v3/articles?title_contains=spacex')
       .then((response) => response.json())
       .then(articles => this.setState({articles: articles}))
@@ -60,7 +61,7 @@ class App extends Component {
           ))}
           </div>
         <div>
-          <h1 id="space-news">Space News</h1>
+          <h1 id="space-news">SpaceX News</h1>
           <div class="article-list-container">
           {this.state.articles.map((article) => (
             <div class="article-wrapper" key={article.id}>
