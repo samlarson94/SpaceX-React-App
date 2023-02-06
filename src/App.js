@@ -60,13 +60,15 @@ class App extends Component {
           ))}
           </div>
         <div>
-          <h1>Space News</h1>
+          <h1 id="space-news">Space News</h1>
           <div class="article-list-container">
           {this.state.articles.map((article) => (
-            <div key={article.id}>
+            <div class="article-wrapper" key={article.id}>
             <h3>{article.title}</h3>
+            <h5>Source: {article.newsSite}</h5>
             <img src={article.imageUrl} />
-            <p>{article.url}</p>
+            <p>{article.summary}</p>
+            <p>Published: {article.publishedAt}</p>
             <a href={article.url} class="btn btn-primary">Go to Article</a>
             </div>
           
