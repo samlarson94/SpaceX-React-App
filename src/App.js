@@ -30,11 +30,10 @@ class App extends Component {
       .then(rockets => this.setState({rockets: rockets}))
 
   // Currently only pulling articles that pertain to SpaceX for News Section
-    fetch('https://api.spaceflightnewsapi.net/v3/articles?title_contains=spacex')
+    fetch('https://api.spaceflightnewsapi.net/v4/articles?title_contains_one=spacex')
       .then((response) => response.json())
       .then(articles => this.setState({articles: articles}))
       .catch(error => console.log(error))
-
   }
 
  
