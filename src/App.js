@@ -8,7 +8,7 @@ import SpaceNews from './components/SpaceNews';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 
-
+consol.log("Loading...")
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Changing to class-based component so we can utilize State.
