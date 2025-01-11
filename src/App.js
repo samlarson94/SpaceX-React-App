@@ -4,11 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Card } from './components/Card';
 import { Modal } from './components/Modal';
-import SpaceNews from './components/SpaceNews';
-import NavBar from './components/NavBar';
-import Home from './components/Home';
 
-consol.log("Loading...")
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Changing to class-based component so we can utilize State.
@@ -21,6 +17,7 @@ class App extends Component {
       articles: []
     }
   }
+
 
   //Life cycle method to mount information from our API Call before rendering
   componentDidMount() {
@@ -36,8 +33,15 @@ class App extends Component {
       .catch(error => console.log(error))
   }
 
- 
+
   render () {
+    const { articles } = this.state
+    const results = articles?.results || []
+    const articleCount = articles?.count || 0;
+    console.log("arts")
+    console.log(articles)
+    console.log(results)
+    console.log(articleCount)
   return (
 
     <div className="container">
@@ -51,34 +55,38 @@ class App extends Component {
       <div className="row">
       {/* Create map function to loop over rockets array */}
         {this.state.rockets.map((rocket) => (
-          <Fragment>
-            {/* Create both Card and Modal as separate components - export from components and import into App.js. Wrap components in Fragment. */}
-            {/* Defining attribute name of rocket as our prop - 'prop' used when passing into components */}
-              <Card rocket={rocket} />
-              <Modal rocket={rocket} />
-        </Fragment>
+           <Fragment key={rocket.id}>
+            <Card rocket={rocket} />
+            <Modal rocket={rocket} />
+         </Fragment>
           ))}
           </div>
         <div>
           <h1 id="space-news">SpaceX News</h1>
           <div class="article-list-container">
-          {this.state.articles.map((article) => (
-            <div class="article-wrapper" key={article.id}>
-            <h3>{article.title}</h3>
-            <h5>Source: {article.newsSite}</h5>
-            <img src={article.imageUrl} />
-            <p>{article.summary}</p>
-            <p>Published: {article.publishedAt}</p>
-            <a href={article.url} class="btn btn-primary">Go to Article</a>
+
+          {results.map((article) => {
+          const { id, title, url, image_url, news_site, summary, published_at } = article;
+
+          return (
+            <div className="article-wrapper" key={id}> {/* Use `key={id}` */}
+              <h3>{title}</h3>
+              <h5>Source: {news_site}</h5>
+              <img src={image_url} alt={title} style={{maxHeight: '400px', borderRadius: '20px'}} />
+              <p>{summary}</p>
+              <p>Published: {new Date(published_at).toLocaleString()}</p>
+              <a href={url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                Go to Article
+              </a>
             </div>
-          
-          ))}
+          );
+        })}
 
           </div>
          
         </div>
-         
-      </div>
+        
+      </div> 
       
       
   );

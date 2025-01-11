@@ -2,7 +2,7 @@ export const Modal = (prop) => (
     // <!-- Modal -->
     <div className="modal fade" 
     id={`popup${prop.rocket.id}`} 
-    tabindex="-1" 
+    tabIndex="-1" 
     aria-labelledby="exampleModalLabel" 
     aria-hidden="true">
 <div className="modal-dialog modal-lg">
