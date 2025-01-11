@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SpaceX-React-App/static/css/main.b122bdec.css",
-    "main.js": "/SpaceX-React-App/static/js/main.ed58d014.js",
+    "main.css": "/SpaceX-React-App/static/css/main.05810e7d.css",
+    "main.js": "/SpaceX-React-App/static/js/main.7685ec5c.js",
     "static/js/787.960af14f.chunk.js": "/SpaceX-React-App/static/js/787.960af14f.chunk.js",
     "index.html": "/SpaceX-React-App/index.html",
-    "main.b122bdec.css.map": "/SpaceX-React-App/static/css/main.b122bdec.css.map",
-    "main.ed58d014.js.map": "/SpaceX-React-App/static/js/main.ed58d014.js.map",
+    "main.05810e7d.css.map": "/SpaceX-React-App/static/css/main.05810e7d.css.map",
+    "main.7685ec5c.js.map": "/SpaceX-React-App/static/js/main.7685ec5c.js.map",
     "787.960af14f.chunk.js.map": "/SpaceX-React-App/static/js/787.960af14f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b122bdec.css",
-    "static/js/main.ed58d014.js"
+    "static/css/main.05810e7d.css",
+    "static/js/main.7685ec5c.js"
   ]
 }
